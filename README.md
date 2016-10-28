@@ -11,9 +11,9 @@ applications.
 - Entire project builds into `dist/`
 - Static content copied into `dist/` (and optionally optimized along the way)
 - Spritemap generated and copied to `dist/img/sprite.png`
-- Shared CSS bundled into `dist/css/shared.css`
+- Application CSS (necessary across all pages) is bundled into `dist/css/app.css`
 - Page CSS bundled as necessary into `dist/css/page.css`
-- Vendor + shared JS bundled into `dist/js/shared.js`
+- Vendor + application JS (necessary across all pages) bundled into `dist/js/app.js`
 - Page JS pages bundled as necessary into `dist/js/page.js`
 - HTML is generated from remote content + templates
 
@@ -30,9 +30,9 @@ src/img/sprite/2.png          /---> .tmp/sprite.css
 src/img/sprite/3.png         /
 ```
 
-### Shared CSS bundled
+### App CSS bundled
 ```
-src/css/index.styl             ---> dist/css/shared.css
+src/css/index.styl             ---> dist/css/app.css
 src/css/a.styl                /
 src/css/b.styl               /
 node_modules/dep/dep.styl   /
@@ -55,19 +55,19 @@ src/js/vendor/c.js          /
 src/js/vendor/d.js         /
 ```
 
-### Shared JS bundled
+### App JS bundled
 ```
-src/js/index.coffee            ---> .tmp/shared.js
+src/js/index.coffee            ---> .tmp/bundle.js
 src/js/a.coffee               /
 src/js/b.coffee              /
 src/js/c.coffee             /
 node_modules/dep/dep.js    /
 ```
 
-### Concat vendor + shared bundle
+### Concat vendor + app bundle
 ```
-.tmp/vendor.js                 ---> dist/js/shared.js
-.tmp/shared.js                /
+.tmp/vendor.js                 ---> dist/js/app.js
+.tmp/bundle.js                /
 ```
 
 ### Page-specific JS bundled
