@@ -15,6 +15,7 @@ applications.
 - Page CSS bundled as necessary into `dist/css/page.css`
 - Vendor + shared JS bundled into `dist/js/shared.js`
 - Page JS pages bundled as necessary into `dist/js/page.js`
+- HTML is generated from remote content + templates
 
 ### Fonts, Images copied
 ```
@@ -76,4 +77,23 @@ src/js/page/a.coffee          /
 src/js/page/b.coffee         /
 src/js/page/c.coffee        /
 node_modules/dep2/dep2.js  /
+```
+
+### HTML generated from templates + includes
+```
+src/index.jade                 ---> dist/index.html
+src/_header.jade              /
+src/_footer.jade             /
+
+src/page.jade                  ---> dist/page.html
+src/_header.jade              /
+src/_footer.jade             /
+```
+
+### HTML generated from templates + remote content
+```
+src/post.jade                  ---> dist/post/<slug>.html
+src/_header.jade              /
+src/_footer.jade             /
+GET api.hanzo.io/content    /
 ```
