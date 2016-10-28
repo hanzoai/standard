@@ -92,8 +92,8 @@ src/_footer.jade             /
 
 ### HTML generated from templates + remote content
 ```
-src/post.jade                  ---> dist/post/<slug>.html
+src/post.jade                  ---> dist/post/slug.html
 src/_header.jade              /
 src/_footer.jade             /
-GET api.hanzo.io/content    /
+api.hanzo.io/content/:slug  /
 ```
