@@ -63,7 +63,7 @@ src/js/c.coffee             /
 node_modules/dep/dep.js    /
 ```
 
-# Concat vendor + shared bundle
+### Concat vendor + shared bundle
 ```
 .tmp/vendor.js                 ---> dist/js/shared.js
 .tmp/shared.js                /
