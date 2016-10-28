@@ -12,9 +12,9 @@ applications.
 - Static content copied into `dist/` (and optionally optimized along the way)
 - Spritemap generated and copied to `dist/img/sprite.png`
 - Application CSS (necessary across all pages) is bundled into `dist/css/app.css`
-- Page CSS bundled as necessary into `dist/css/page.css`
-- Vendor + application JS (necessary across all pages) bundled into `dist/js/app.js`
-- Page JS pages bundled as necessary into `dist/js/page.js`
+- Page-specific CSS bundled as necessary into `dist/css/<page>.css`
+- Vendor (third-party) + application JS (necessary across all pages) bundled into `dist/js/app.js`
+- Page-specific JS bundled as necessary into `dist/js/<page>.js`
 - HTML is generated from remote content + templates
 
 ### Fonts, Images copied
@@ -41,7 +41,7 @@ node_modules/dep/dep.styl   /
 
 ### Page-specific CSS bundled
 ```
-src/css/page/index.styl        ---> dist/css/page.css
+src/css/page/index.styl        ---> dist/css/<page>.css
 src/css/page/a.styl           /
 src/css/page/b.styl          /
 ```
@@ -72,7 +72,7 @@ node_modules/dep/dep.js    /
 
 ### Page-specific JS bundled
 ```
-src/js/page/index.coffee       ---> dist/js/page.js
+src/js/page/index.coffee       ---> dist/js/<page>.js
 src/js/page/a.coffee          /
 src/js/page/b.coffee         /
 src/js/page/c.coffee        /
