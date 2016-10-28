@@ -64,7 +64,7 @@ src/js/c.coffee             /
 node_modules/dep/dep.js    /
 ```
 
-### Concat vendor + app bundle
+### Concat vendor + bundled JS
 ```
 .tmp/vendor.js                 ---> dist/js/app.js
 .tmp/bundle.js                /
