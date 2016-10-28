@@ -46,7 +46,7 @@ src/css/page/a.styl           /
 src/css/page/b.styl          /
 ```
 
-### Vendor concatenated
+### Vendor JS concatenated
 ```
 src/js/vendor/jquery.js        ---> .tmp/vendor.js
 src/js/vendor/a.js            /
