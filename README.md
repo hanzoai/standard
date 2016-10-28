@@ -96,4 +96,9 @@ src/post.jade                  ---> dist/post/slug.html
 src/_header.jade              /
 src/_footer.jade             /
 api.hanzo.io/content/:slug  /
+
+src/product.jade               ---> dist/product/slug.html
+src/_header.jade              /
+src/_footer.jade             /
+api.hanzo.io/product/:slug  /
 ```
