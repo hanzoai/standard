@@ -47,20 +47,26 @@ src/css/page/b.styl          /
 
 ### Vendor concatenated
 ```
-src/js/vendor/jquery.js        ---> .tmp/vendor.js        ---> dist/js/shared.js
-src/js/vendor/a.js            /                          /
-src/js/vendor/b.js           /                          /
-src/js/vendor/c.js          /                          /
-src/js/vendor/d.js         /                          /
+src/js/vendor/jquery.js        ---> .tmp/vendor.js
+src/js/vendor/a.js            /
+src/js/vendor/b.js           /
+src/js/vendor/c.js          /
+src/js/vendor/d.js         /
 ```
 
 ### Shared JS bundled
 ```
-src/js/index.coffee            ---> .tmp/shared.js /
+src/js/index.coffee            ---> .tmp/shared.js
 src/js/a.coffee               /
 src/js/b.coffee              /
 src/js/c.coffee             /
 node_modules/dep/dep.js    /
+```
+
+# Concat vendor + shared bundle
+```
+.tmp/vendor.js                 ---> dist/js/shared.js
+.tmp/shared.js                /
 ```
 
 ### Page-specific JS bundled
