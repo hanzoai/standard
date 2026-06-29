@@ -1,3 +1,5 @@
+<p align="center"><img src=".github/hero.svg" alt="standard" width="880"></p>
+
 # Standard
 Standardized project structure and build tools for use by serverless JavaScript
 applications.
